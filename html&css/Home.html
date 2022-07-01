@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Crud Operations</title>
+    <style>
+        #table-display,#table-display th,#table-display td {
+  border: 1px solid black;
+}
+    </style>
+    <script defer src="../Javascript/file.js"></script>
+    <script defer src="../Javascript/StudentData.js"></script>
+    </script>
+</head>
+<body>
+    <div style="margin: 2% 19%;">
+        <div id="formId" class="form-content">
+            <form class="form" action="#" onsubmit="save()">
+              <table>
+                  <tr>
+                      <td>
+                          Student Name:
+                      </td>
+                      <td>
+                          <div>            
+                              <input  type="text" onfocusout="nameValidation()" id="name" name="name" placeholder="Your name.." required>
+                          </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          Mathematics :
+                      </td>
+                      <td>
+                          <div>
+                              <input type="text" onfocusout="marksValidation(event)" id="math" name="math" placeholder="mathematics.." required>
+                              <error-output class="text-error" for="text"></error-output>
+                          </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          Physics :
+                      </td>
+                      <td>
+                          <div>
+                              <input type="text" onfocusout="marksValidation(event)" id="physics" name="physics" placeholder="physics.." required>
+                              <error-output class="text-error" for="text"></error-output>
+                          </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          Chemistry :
+                      </td>
+                      <td>
+                          <div>
+             
+                              <input type="text" onfocusout="marksValidation(event)" id="chemistry" name="chemistry" placeholder="chemistry.." required>
+                              <error-output class="text-error" for="text"></error-output>
+                          </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          English :
+                      </td>
+                      <td>
+                          <div>
+                              <input  type="text" onfocusout="marksValidation(event)" id="english" name="english" placeholder="english.." required>
+                              <error-output class="text-error" for="text"></error-output>
+                          </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          Hindi :
+                      </td>
+                      <td>
+                          <div>
+                              <input  type="text" onfocusout="marksValidation(event)" id="hindi" name="hindi" placeholder="hindi.." required>
+                              <error-output class="text-error" for="text"></error-output>
+                          </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td colspan="2" style="text-align: right;"><button type="submit" id="submitButton">Submit</button></td>
+                  </tr>
+              </table>
+            </form>
+          </div>
+          <div style="margin-top:30px;">
+              <table id="table-display">
+              </table>
+          </div>
+    </div>
+</body>
+</html>
